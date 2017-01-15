@@ -1,0 +1,12 @@
+  {
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/webManager",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "MqjvGg0MSn/Qzfb5H3el98PkE7lqpHkSITemdK9bmwf2uhXOMz0kTU+o3m26yhLNNdAwS7xEC0cxvCtAopbQhQ=="
+    },
+    "local": {}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
