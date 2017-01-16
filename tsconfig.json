@@ -4,8 +4,10 @@
     "allowSyntheticDefaultImports": false,
     "target": "es5",
     "module": "commonjs",
+    "lib": ["es6"],
     "moduleResolution": "node",
     "allowJs": true,
+    "sourceMap": true,
     "noEmit": true
   },
   "exclude": [

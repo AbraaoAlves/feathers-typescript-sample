@@ -2,16 +2,24 @@
   "name": "feathers-typescript-sample",
   "description": "A boilerplate to show how interop feathersjs with nodejs in typescript.",
   "version": "0.0.1",
-  "private": true,
   "homepage": "",
   "main": "src/",
   "keywords": [
-    "feathers"
+    "feathers",
+    "typescript",
+    "ts-node",
+    "typescript-definitions",
+    "salsa"
   ],
   "license": "MIT",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbraaoAlves/feathers-typescript-sample.git"
+  },
   "author": {
-    "name": "Abraão Alves"
+    "name": "Abraão Alves",
+    "email": "abraao.teodosio@gmail.com",
+    "url": "abraaoalves.github.io"
   },
   "contributors": [],
   "bugs": {},
@@ -19,11 +27,11 @@
     "node": ">= 0.12.0"
   },
   "scripts": {
+    "postinstall": "cd node_modules/feathers && npm i && npm run compile && cd ../..",
     "test": "npm run mocha",
-    "start": "parallelshell \"npm run mongodb\" \"npm run serve\"",
-    "serve1": "nodemon --debug --watch \"src/**/*.js\" --ignore \"src/**/*.spec.js\" --exec \"ts-node\" src/index.js",
-    "serve":  "ts-node src/index.js",
+    "start": "npm run serve",
     "mongodb": "mongod",
+    "serve": "nodemon --debug --watch \"src/**/*.js\" --ignore \"src/**/*.spec.js\" --exec \"ts-node\" src/index.js",
     "mocha": "mocha --compilers ts:ts-node/register test/ --recursive"
   },
   "dependencies": {
