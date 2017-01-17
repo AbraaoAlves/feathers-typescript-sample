@@ -1,7 +1,8 @@
 {
-  "name": "feathers-typescript-sample",
-  "description": "A boilerplate to show how interop feathersjs with nodejs in typescript.",
+  "name": "teeias-back",
+  "description": "A feathersjs app in nodejs and typescript.",
   "version": "0.0.1",
+  "private": true,
   "homepage": "",
   "main": "src/",
   "keywords": [
@@ -12,10 +13,6 @@
     "salsa"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AbraaoAlves/feathers-typescript-sample.git"
-  },
   "author": {
     "name": "Abraão Alves",
     "email": "abraao.teodosio@gmail.com",
