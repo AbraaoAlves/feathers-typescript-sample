@@ -30,5 +30,3 @@ node_modules
 lib/
 data/
 
-src/**/*.js
-src/**/*.js.map
