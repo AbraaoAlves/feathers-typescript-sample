@@ -14,7 +14,7 @@ export default (app: Application) =>
     })
     // Then redirect to the login page
 
-    .then(user => next(user))
+    .then(user => delete user.password, res.status(201).send(user))
 
     // On errors, just call our error middleware
     .catch(next);
